@@ -1,17 +1,8 @@
-function add(a, b) {
-  return a + b;
-}
+const users = [
+  { name: "Klakier, age: 20" },
+  { name: "Vasia, age: 18" },
+  { name: "Bob, age: 29" },
+  { name: "Kasia, age: 45" },
+];
 
-function substract(a, b) {
-  return a - b;
-}
-
-//Funkcja wyższego poziomu
-function calculate(a, b, fn) {
-  console.log(fn.name);
-  const res = fn(a, b);
-  return res;
-}
-
-const res = calculate(3, 5, add);
-console.log(res);
+console.log(users.sort((a, b) => a.age - b.age));
