@@ -141,6 +141,7 @@ main {
   background: #fff;
   border-radius: 10px;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .habbit__day {
@@ -150,6 +151,8 @@ main {
   font-size: 14px;
   line-height: 16px;
   padding: 20px 25px;
+  min-width: 150px;
+  text-align: center;
 }
 
 .habbit__comment {
@@ -170,4 +173,53 @@ main {
 
 .habbit__delete:hover {
   background: #eff2ff;
+}
+
+.habbit__form {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 0 10px 0 25px;
+  position: relative;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #e7ebfb;
+  border-radius: 9px;
+  padding: 12px 20px;
+  font-family: "Comfortaa", sans-serif;
+  flex: 1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input::placeholder {
+  color: #8899ab;
+}
+
+.input_icon {
+  padding-left: 45px;
+}
+
+.input__icon {
+  position: absolute;
+  top: 10px;
+  left: 45px;
+}
+
+.button {
+  background: #edecfe;
+  border-radius: 9px;
+  border: none;
+  font-size: 13px;
+  line-height: 14px;
+  color: #5051f9;
+  padding: 14px 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #dcdaff;
 }
