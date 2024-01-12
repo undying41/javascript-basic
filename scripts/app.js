@@ -1,8 +1,22 @@
-const users = [
-  { name: "Klakier, age: 20" },
-  { name: "Vasia, age: 18" },
-  { name: "Bob, age: 29" },
-  { name: "Kasia, age: 45" },
-];
+"use strict";
 
-console.log(users.sort((a, b) => a.age - b.age));
+let habbits = [];
+const HABBIT_KEY = "HABBIT_KEY";
+
+/* utils  */
+
+function loadData() {
+  const habbitsString = localStorage.getItem(HABBIT_KEY);
+  const habbitArray = JSON.parse(habbitsString);
+  if (Array.isArray(habbitArray)) {
+    habbits = habbitArray;
+  }
+}
+
+function saveData() {
+  localStorage.setItem(HABBIT_KEY, JSON.stringify(habbits));
+}
+
+(() => {
+  loadData();
+})();
