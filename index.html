@@ -19,14 +19,7 @@
       <div class="panel">
         <img class="logo" src="./images/logo.svg" alt="Habbit App Logo" />
         <nav class="menu">
-          <div class="menu__list">
-            <button class="menu__item menu__item_active">
-              <img src="./images/water.svg" />
-            </button>
-            <button class="menu__item">
-              <img src="./images/food.svg" />
-            </button>
-          </div>
+          <div class="menu__list"></div>
           <button class="menu__add">
             <img src="./images/add.svg" />
           </button>
@@ -34,11 +27,11 @@
       </div>
       <div class="content">
         <header>
-          <h1>Pompki</h1>
+          <h1 class="h1">-</h1>
           <div class="progress">
             <div class="progress__text">
               <div class="progress__name">Postępy</div>
-              <div class="progress_percent">80%</div>
+              <div class="progress__percent">%</div>
             </div>
             <div class="progress__bar">
               <div class="progress__cover-bar"></div>
@@ -46,21 +39,15 @@
           </div>
         </header>
         <main>
-          <div>
-            <div class="habbit">
-              <div class="habbit__day">Dzień 1</div>
-              <div class="habbit__comment">Lorem ipsum dolor sit amet.</div>
-              <button class="habbit__delete">
-                <img src="./images/delete.svg" alt="Delete" />
-              </button>
-            </div>
+          <div id="days">
+            <div class="habbit"></div>
           </div>
           <div class="habbit">
-            <div class="habbit__day">Dzień 2</div>
+            <div class="habbit__day">Dzień _</div>
             <form class="habbit__form">
               <input class="input_icon" type="text" placeholder="Komentarz" />
               <img class="input__icon" src="./images/comment.svg" />
-              <button class="button">Dodaj</button>
+              <button class="button" type="submit">Dodaj</button>
             </form>
           </div>
         </main>
