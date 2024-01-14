@@ -44,8 +44,13 @@
           </div>
           <div class="habbit">
             <div class="habbit__day">Dzień _</div>
-            <form class="habbit__form">
-              <input class="input_icon" type="text" placeholder="Komentarz" />
+            <form class="habbit__form" onsubmit="addDays(event)">
+              <input
+                class="input_icon"
+                name="comment"
+                type="text"
+                placeholder="Komentarz"
+              />
               <img class="input__icon" src="./images/comment.svg" />
               <button class="button" type="submit">Dodaj</button>
             </form>
